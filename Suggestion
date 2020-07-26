@@ -1,0 +1,32 @@
+import random
+
+print("____________SUGGESTION____________")
+print("")
+
+choices = []
+
+num = int(input("Enter the no. of things you wanna do : "))
+
+for i in range(num):
+  user_inputs = input("\nEnter thing {} : ".format(i+1))
+  choices.append(user_inputs)
+print("")
+print(choices)
+print("")
+x = choices[random.randrange(0,num)]
+
+print(x)
+
+
+
+
+
+# Take input from User
+# Generate random input
+# Print input
+
+
+'''
+randrange(0,3)----[0,1,2]
+randint(0,3)-------[0,1,2,3]
+'''
